@@ -1,0 +1,11 @@
+{
+  "name": "cricplay-backend",
+  "version": "1.0.0",
+  "description": "Backend of crickplay-backend",
+  "main": "Server.js",
+  "scripts": {
+    "test": "nodemon Server.js"
+  },
+  "author": "Imtiyaz, Kaushik, Kunnaal, Lalit",
+  "license": "ISC"
+}
