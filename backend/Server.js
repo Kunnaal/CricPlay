@@ -2,13 +2,13 @@ require ('dotenv').config();
 const express = require('express');
 
 const dbHandler = require('./Utils/DBHandler');
-const authRouter = require('./Router/AuthRouter');
+const Router = require('./Router/Router.js');
 const app = express();
 
 app.use(express.urlencoded({extended:true}));
 app.use(express.static('public'));
 app.use(express.json());
-app.use('/api', authRouter);    //Router middleware
+app.use('/api', Router);    //Router middleware
 
 app.get('/', (req, res) => {
     res.send('<h1>DB @ '+( process.env.PORT || 8000 )+'</h1>')
