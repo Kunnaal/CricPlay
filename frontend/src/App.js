@@ -1,28 +1,23 @@
 import React from "react";
-import {
-    BrowserRouter as Router,
-    Switch,
-    Route
-  } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-import MainPage from "./pages/mainPage/mainPage"
+import MainPage from "./pages/mainPage/mainPage";
 import CreateLobby from "./pages/createLobby/createLobby";
 import JoinLobby from "./pages/joinLobby/joinLobby";
 
-function App(){
-
-    return <div>
-        <Router>
-            <Switch>
-                <Route path="/" exact component={MainPage}/>
-                <Route path="/create" component={CreateLobby}/>
-                <Route path="/join" component={JoinLobby}/> 
-            </Switch>
-        </Router>
+function App() {
+  console.log("Inside app");
+  return (
+    <div>
+      <Router>
+        <Routes>
+          <Route path="/" element={<MainPage />} />
+          <Route path="/create" element={<CreateLobby />} />
+          <Route path="/join" element={<JoinLobby />} />
+        </Routes>
+      </Router>
     </div>
+  );
 }
-
-
-
 
 export default App;
