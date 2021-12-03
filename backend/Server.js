@@ -1,9 +1,14 @@
 require("dotenv").config();
 const express = require("express");
+const http = require("http");
+const socketio = require("socket.io");
+
+const app = express();
+const server = http.createServer(app);
+const io = socketio(server);
 
 const dbHandler = require("./Utils/DBHandler");
-const Router = require("./Router/Router.js");
-const app = express();
+const Router = require("./Router/Router");
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static("public"));
@@ -26,3 +31,7 @@ dbHandler
   .catch((err) => {
     console.log(err);
   });
+
+io.on("connection", () => {
+  console.log("Connection Established!");
+});
