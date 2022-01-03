@@ -1,0 +1,33 @@
+/* .backgroundStyle {
+  background-repeat: no-repeat;
+  background-color: #200049;
+  height: 100vh;
+  width: 100vw;
+  background-image: url("../Images/BG_Image.jpg");
+} */
+
+.formStyle {
+  position: absolute;
+  left: 40vw;
+  top: 40vh;
+  margin: 2rem;
+}
+
+.backgroundStyle {
+  position: absolute;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
+  background-image: url("../Images/BG_Image.jpg"),
+    linear-gradient(to bottom, #200049, #200049);
+  /* filter: blur(8px);
+  -webkit-filter: blur(8px);
+ */
+}
+
+.blur {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(8px);
+  height: 100vh;
+  width: 100vw;
+}
