@@ -8,7 +8,7 @@ import JoinLobby from "./pages/joinLobby/joinLobby";
 function App() {
   console.log("Inside app");
   return (
-    <div>
+    <div style={{ height: "100vh" }}>
       <Router>
         <Routes>
           <Route path="/" element={<MainPage />} />
