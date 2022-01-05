@@ -1,0 +1,60 @@
+/* .backgroundStyle {
+  background-repeat: no-repeat;
+  background-color: #200049;
+  height: 100vh;
+  width: 100vw;
+  background-image: url("../Images/BG_Image.jpg");
+} */
+
+.backgroundImage {
+    position: absolute;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+    background-size: 100%;
+    background-position: center;
+    background-image: url("../Images/BG2_Image.jpg"),
+      linear-gradient(to bottom, #0e0e0efa, #0e0e0efa);
+  }
+  
+  .blurBackground {
+    filter: blur(8px);
+  }
+  
+  .flexBox {
+    display: flex;
+    position: relative;
+    height: 70%;
+    width: 50%;
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+    border: 2px white solid;
+  }
+  
+  .foregroundImage {
+    height: 82vh;
+    width: 50vw;
+    background-image: url("../Images/BG2_Image.jpg");
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    /* background-position: 0px 0px; */
+  }
+  
+  .formContainer {
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    height: 100%;
+    width: 50vw;
+  }
+  
+  .formDiv {
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    text-align: center;
+  }
+  
